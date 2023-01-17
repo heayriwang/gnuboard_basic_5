@@ -29,6 +29,70 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 
+<!-- 헤드부분 -->
+<div class="Wrap">
+        <header class="header">
 
 
-헤드임...
+            <!-- top_banner -->
+            <div class="top_banner">
+                <div class="inner">
+                    <div class="left">부산 경남 캠핑카 제작 전문 업체 트럭 개조 캠핑카 주문 제작 한울캠핑카</div>
+                    <ul class="top_link">
+                        <li><a href="">news &amp; notice</a></li>
+                        <li><a href="">q &amp; a board</a></li>
+                        <li><a href="/adm" target="_blank"><i class="xi-pause"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- head_container -->
+            <div class="head_container">
+                <div class="inner">
+                    <h1>
+                        <a href="/">
+                            <img src="<?=G5_THEME_URL ?>/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href=""><?= $as_company ?>소개</a>
+                              <? include G5_THEME_PATH.'/doc/nav01.php'; ?>
+                            </li>
+                            <li>
+                                <a href="">제품소개</a>
+                                <? include G5_THEME_PATH.'/doc/nav02.php'; ?>
+                            </li>
+                            <li>
+                                <a href="">갤러리</a>
+                                <ul class="submenu">
+                                    <li><a href="../bbs/board.php?bo_table=gal">갤러리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">고객지원</a>
+                                <ul class="submenu">
+                                    <li><a href="../bbs/board.php?bo_table=bbs">문의게시판</a></li>
+                                    <li><a href="../bbs/board.php?bo_table=pds">자료실</a></li>
+                                    <li><a href="../bbs/board.php?bo_table=nos">공지사항</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><i class="xi-star"></i></a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- 헤드부분 -->
+
+        <?php
+    if(!defined('_INDEX_')) { // index가 아닐때...
+        include G5_THEME_PATH.'/detail.head.php'; // 서브페이지 해드...
+    }
+    ?>

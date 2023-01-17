@@ -12,13 +12,39 @@ if(G5_COMMUNITY_USE === false) {
 }
 ?>
 
-    
+<?php
+    if(!defined('_INDEX_')) { // index가 아닐때...
+        include G5_THEME_PATH.'/detail.tail.php'; // 서브페이지 푸터...
+    }
+    ?>
 
 
+<!-- 푸터부분 -->
+<footer class="footer">
+
+<ul>
+    <li> 한울캠핑카</li>
+    <li>대 표 : 백정란</li>
+    <li>사업자등록번호 : 155-17-00287</li>
+</ul>
+<ul>
+    <li>Address : 경남 진주시 사봉면 산업단지로 44번길 22</li>
+    <li>Tel : 055-757-1484</li>
+    <li>Fax : 055-757-1485 </li>
+    <li>e-mail : hanul4751@naver.com</li>
+</ul>
 
 
-푸터임...
+</footer>
 
+</div>
+
+ <!-- toTop -->
+ <div class="toTop">
+        <i class="xi-arrow-top"></i>
+    </div>
+
+<!-- 푸터부분 -->
 
 
 
