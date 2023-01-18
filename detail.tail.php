@@ -1,3 +1,16 @@
+
+
+
+        <script>
+        $(function(){
+            var num = <?= $page_num ?>;
+            $('.aside_menu ul>li').eq(num-1).addClass('on');
+        })
+        </script>
+
+
+
+
 </div>
 
 
@@ -9,14 +22,17 @@
     </div>
     <div class="aside_customer">
         <strong>contact us <i class="xi-user-plus-o"></i></strong>
-        <a href="tel:051-123-4567">051-123-4567</a>
+        <a href="tel:<?= $as_tel ?>"><?= $as_tel ?></a>
         <ul>
-            <li>Tel : 055-757-1484</li>
-            <li>Fax : 055-757-1485 </li>
-            <li>e-mail : hanul4751@naver.com</li>
+          
+            <li>Fax : <?= $as_fax ?> </li>
+            <li>e-mail : <?= $as_mail ?></li>
         </ul>
     </div>
 </aside>
 </div>
 </div>
 </div>
+
+
+

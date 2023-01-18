@@ -1,8 +1,8 @@
 <?
-$cate_num = 1;
-$cate_title = '회사소개';
-$page_num = 2;
-$page_title = '찾아오시는길';
+$cate_num = 2;
+$cate_title = '제품소개';
+$page_num = 3;
+$page_title = 'HWC680FL';
  
 include '../../../common.php';
 include_once(G5_THEME_PATH.'/head.php');

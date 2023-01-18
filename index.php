@@ -63,14 +63,9 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </figure>
                 </div>
+
                 <div class="m_link">
-                    <ul class="m_link">
-                        <li><a href="../htm/m021.php">HWC540DL</a></li>
-                        <li><a href="../htm/m022.php">HWC620FL</a></li>
-                        <li><a href="../htm/m023.php">HWC680FL</a></li>
-                        <li><a href="../htm/m024.php">HWC540FL</a></li>
-                        <li><a href="../htm/m025.php">HWC790FL</a></li>
-                    </ul>
+                    <? include G5_THEME_PATH.'/doc/nav02.php'; ?>
                 </div>
 
             </section>
@@ -124,10 +119,12 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="inner">
                     <div class="news">
                         <h3>
-                            news &amp; notice <a href="..."><i class="xi-plus"></i></a>
+                            news &amp; notice <a href="/bbs/board.php?bo_table=nos"><i class="xi-plus"></i></a>
                         </h3>
-                        <div class="con">
-
+                        <div class="latest">
+                              <?php
+                                  echo latest('theme/basic', 'nos', 4, 35);
+                              ?>
                         </div>
                     </div>
                     <div class="sang">
@@ -136,8 +133,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </figure>
                     </div>
                     <div class="contact">
-                        <a href="tel:051-123-4567">051-123-4567</a>
-                        <p>부산 경남 캠핑카 제작 전문 업체 트럭 개조 캠핑카 주문 제작 한울캠핑카</p>
+                        <a href="tel:<?= $as_tel ?>"><?= $as_tel ?></a>
+                        <p><?= $as_description ?></p>
                         <a href="https://youtu.be/-55-M7gUTQs"> <i class="xi-youtube-play"></i></a>
 
                     </div>

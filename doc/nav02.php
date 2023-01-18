@@ -1,7 +1,8 @@
+<a href="<?= G5_THEME_URL ?>/doc/m021.php">제품소개</a>
 <ul class="submenu">
-    <li><a href="../doc/m021.php">HWC540DL</a></li>
-    <li><a href="../htm/m022.php">HWC620FL</a></li>
-    <li><a href="../htm/m023.php">HWC680FL</a></li>
-    <li><a href="../htm/m024.php">HWC540FL</a></li>
-    <li><a href="../htm/m025.php">HWC790FL</a></li>
+    <li><a href="<?= G5_THEME_URL ?>/doc/m021.php">HWC540DL</a></li>
+    <li><a href="<?= G5_THEME_URL ?>/htm/m022.php">HWC620FL</a></li>
+    <li><a href="<?= G5_THEME_URL ?>/htm/m023.php">HWC680FL</a></li>
+    <li><a href="<?= G5_THEME_URL ?>/htm/m024.php">HWC540FL</a></li>
+    <li><a href="<?= G5_THEME_URL ?>/htm/m025.php">HWC790FL</a></li>
  </ul>

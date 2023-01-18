@@ -23,15 +23,15 @@ if(G5_COMMUNITY_USE === false) {
 <footer class="footer">
 
 <ul>
-    <li> 한울캠핑카</li>
-    <li>대 표 : 백정란</li>
-    <li>사업자등록번호 : 155-17-00287</li>
+    <li> <?= $as_company ?> </li>
+    <li>대 표 : <?= $as_name ?></li>
+    <li>사업자등록번호 : <?= $as_num ?></li>
 </ul>
 <ul>
-    <li>Address : 경남 진주시 사봉면 산업단지로 44번길 22</li>
-    <li>Tel : 055-757-1484</li>
-    <li>Fax : 055-757-1485 </li>
-    <li>e-mail : hanul4751@naver.com</li>
+    <li>Address : <?= $as_address ?></li>
+    <li>Tel : <?= $as_tel ?></li>
+    <li>Fax : <?= $as_fax ?> </li>
+    <li>e-mail : <?= $as_mail ?></li>
 </ul>
 
 
@@ -43,6 +43,14 @@ if(G5_COMMUNITY_USE === false) {
  <div class="toTop">
         <i class="xi-arrow-top"></i>
     </div>
+
+
+
+
+       <!-- mopen -->
+       <button class="mopen">
+        <i class="xi-bars"></i>
+    </button>
 
 <!-- 푸터부분 -->
 

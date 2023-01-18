@@ -42,6 +42,34 @@ include G5_THEME_PATH.'/doc/assets.php';
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="title" content="<?= $as_company ?>">
+<meta name="description" content="<?= $as_description ?>">
+<meta name="keywords" content="<?= $as_keywords ?>">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="<?= $as_company ?>">
+<meta property="og:description" content="<?= $as_description ?>">
+<meta property="og:url" content="<?= $as_url ?>">
+<meta property="og:image" content="<?= G5_THEME_URL ?>/img/logo.png">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="<?= $as_company ?>">
+<meta name="twitter:description" content="<?= $as_description ?>">
+<meta name="twitter:image" content="<?= G5_THEME_URL ?>/img/logo.png">
+<meta name="twitter:domain" content="<?= $as_company ?>">
+
+
+<link rel="canonical" href="<?= $as_url ?>">
+<link rel="canonical" href="<?= G5_THEME_URL ?>/img/favicon.png">
+
+
+
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">'.PHP_EOL;
