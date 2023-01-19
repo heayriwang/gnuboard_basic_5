@@ -113,6 +113,23 @@ h6 {
         justify-content: flex-end;
     }
 
+    .header .head_container .inner {
+        height: 100px;
+
+    }
+
+    .header.on::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(44, 43, 43, 0.9);
+
+
+        z-index: 1000;
+    }
 }
 
 .header .head_container {
@@ -133,7 +150,6 @@ h6 {
 
 .header .gnb>ul>li {
     position: relative;
-
 }
 
 .header .gnb>ul>li~li::before {
@@ -187,20 +203,29 @@ h6 {
 
 @media(max-width:768px) {
 
-    .header h1 img {
+    .header h1 {
         position: fixed;
         z-index: 1001;
     }
 
     .header .gnb {
         position: fixed;
-        left: 0;
+        left: -100%;
         top: 0;
         z-index: 1000;
         width: calc(100% - 90px);
         height: 100vh;
         background: #337689;
         border-right: 1px solid #333;
+        transition: 0.5s;
+    }
+
+    .header.on h1 {
+        position: fixed;
+    }
+
+    .header.on .gnb {
+        left: 0;
 
     }
 
@@ -233,16 +258,14 @@ h6 {
 
         transform: translate(0, 0);
         width: auto;
-        background: #fff;
-        border: 3px solid #337689;
-        line-height: 40px;
-        font-size: 13px;
-
         opacity: 1;
         visibility: visible;
+        display: none;
+    }
 
 
-        /* display: none; */
+    .header .gnb>ul>li .submenu.on {
+        display: block;
     }
 
     .header .gnb>ul>li:last-child {
@@ -606,6 +629,20 @@ h6 {
     background: linear-gradient(to left, transparent 50%, #337689 50%);
 }
 
+
+@media(max-width:768px) {
+
+    #sub .sub_banner::before {
+        background: #337689;
+        z-index: -1;
+    }
+
+    /* #sub .sub_banner .inner{
+    
+    } */
+
+}
+
 #sub .sub_banner strong {
     margin: 0 0 10px 0;
     font-size: 20px;
@@ -659,6 +696,17 @@ h6 {
     border-right: 1px solid #ddd;
 }
 
+
+@media(max-width:768px) {
+    #sub .sub_container .article {
+
+        padding: 50px 15px 100px 15px;
+        border-right: none;
+    }
+
+}
+
+
 #sub .sub_container .article h3 {
     font-size: 18px;
     line-height: 50px;
@@ -675,6 +723,15 @@ h6 {
 #sub .sub_container .aside {
     flex: 3;
     padding: 50px 0 100px 50px;
+}
+
+
+@media(max-width:768px) {
+    #sub .sub_container .aside {
+
+        padding: 50px 0 100px 0;
+    }
+
 }
 
 #sub .aside_menu {
@@ -803,7 +860,7 @@ h6 {
     border: none;
     background: transparent;
     display: none;
-    z-index: 999;
+    z-index: 1002;
 }
 
 .mopen i {

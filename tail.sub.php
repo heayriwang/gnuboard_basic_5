@@ -11,7 +11,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 <!-- 스크립트 첨부 -->
     <script src="<?php echo G5_THEME_URL; ?>/js/slick.min.js"></script>
-    <script src="<?php echo G5_THEME_URL; ?>/js/main.js"></script>
+    <script src="<?php echo G5_THEME_URL; ?>/js/main.js?ver=1.2"></script>
 <!-- 스크립트 첨부 -->
 
 

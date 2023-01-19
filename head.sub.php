@@ -141,7 +141,7 @@ if(!defined('G5_IS_ADMIN'))
     <link rel="stylesheet" href="<?php echo G5_THEME_URL; ?>/css/font.css">
     <link rel="stylesheet" href="<?php echo G5_THEME_URL; ?>/css/common.css">
     <link rel="stylesheet" href="<?php echo G5_THEME_URL; ?>/css/slick.css">
-    <link rel="stylesheet" href="<?php echo G5_THEME_URL; ?>/css/main.css">
+    <link rel="stylesheet" href="<?php echo G5_THEME_URL; ?>/css/main.css?ver=1.3">
 <!-- 링크첨부 -->
 
 
